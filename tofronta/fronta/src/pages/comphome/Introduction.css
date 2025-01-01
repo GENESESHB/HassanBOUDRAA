@@ -119,7 +119,7 @@
   }
 
   .card1 {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
@@ -131,7 +131,9 @@
   .welcome-text p {
     font-size: 1rem;
   }
-
+  .card1 h2 {
+     font-size: 1.4rem;
+  }
   .card1 img {
     width: 120px;
     height: 120px;
@@ -140,5 +142,11 @@
   .card1 .btn {
     padding: 8px 20px;
     font-size: 0.9rem;
+  }
+  section {
+    width: 96%;
+  }
+  .card {
+    margin: 0px;
   }
 }
