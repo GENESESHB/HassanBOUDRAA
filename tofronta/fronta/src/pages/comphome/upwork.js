@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDatabase, faCogs, faServer, faCloud } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
 import './styles/upwork.css'; // Custom CSS file for styling
 
 const Upwork = () => {
@@ -14,52 +16,53 @@ const Upwork = () => {
       <div className="container1">
         <h2 className="section-title">My Upwork Experience - Full Stack MERN Developer</h2>
 
-        <p className="intro-text">
-          Over the years, I have worked on various freelance projects through Upwork, specializing in Full Stack MERN development. 
-          I have successfully delivered projects involving MongoDB, Express.js, React, and Node.js, helping clients create dynamic, responsive, and scalable web applications.
-        </p>
+        <div className="cards-container">
+          <div className="card">
+            <FontAwesomeIcon icon={faDatabase} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">MERN Stack Skills & Services</h3>
+              <ul className="services-list">
+                <li><strong>MongoDB:</strong> Database design, data modeling, optimization, and complex queries.</li>
+                <li><strong>Express.js:</strong> RESTful API development and integration with front-end technologies.</li>
+                <li><strong>React:</strong> Building dynamic, responsive, user-friendly single-page applications.</li>
+                <li><strong>Node.js:</strong> Server-side development, handling requests and managing backend services.</li>
+              </ul>
+            </div>
+          </div>
 
-        <div className="skills-and-services">
-          <h3 className="subheading">MERN Stack Skills & Services</h3>
-          <p>
-            I offer a wide range of services as a Full Stack MERN Developer, including:
-          </p>
-          <ul className="services-list">
-            <li><strong>MongoDB:</strong> Database design, data modeling, optimization, and complex queries using MongoDB for handling large-scale data.</li>
-            <li><strong>Express.js:</strong> RESTful API development, backend logic, and integration with front-end technologies to build responsive and efficient applications.</li>
-            <li><strong>React:</strong> Building dynamic, responsive, and user-friendly single-page applications (SPAs), with a focus on reusable components and state management using hooks.</li>
-            <li><strong>Node.js:</strong> Server-side development with Node.js to handle client requests, integrate with databases, and manage backend services.</li>
-            <li><strong>Authentication & Authorization:</strong> Implementing secure authentication and authorization mechanisms using JWT, OAuth, and Passport.js.</li>
-            <li><strong>Deployment:</strong> Deploying applications to cloud platforms like AWS, Heroku, DigitalOcean, and others, ensuring high availability and scalability.</li>
-            <li><strong>Version Control (Git):</strong> Using Git for code versioning, collaborating with teams, and managing codebases efficiently with GitHub or GitLab.</li>
-            <li><strong>Testing & Debugging:</strong> Writing unit and integration tests using Jest, Mocha, and other testing frameworks to ensure code quality and reliability.</li>
-            <li><strong>Real-time Applications:</strong> Building real-time chat applications, notifications, and live data updates using WebSockets or Socket.io.</li>
-          </ul>
-        </div>
+          <div className="card">
+            <FontAwesomeIcon icon={faCogs} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Additional Services</h3>
+              <ul className="services-list">
+                <li><strong>Authentication & Authorization:</strong> Secure login and role management with JWT and OAuth.</li>
+                <li><strong>Deployment:</strong> Deploy applications on platforms like AWS, Heroku, DigitalOcean, and others.</li>
+                <li><strong>Real-time Apps:</strong> Building real-time messaging apps using WebSockets and Socket.io.</li>
+              </ul>
+            </div>
+          </div>
 
-        <div className="project-showcase">
-          <h3 className="subheading">Notable Upwork Projects</h3>
-          <p>
-            Here are some of the projects I have worked on as a full stack MERN developer:
-          </p>
-          <ul className="project-list">
-            <li>
-              <strong>Project 1: E-Commerce Website</strong>
-              <p>A full-fledged e-commerce application built with React, Node.js, and MongoDB, allowing users to browse products, make purchases, and manage orders.</p>
-            </li>
-            <li>
-              <strong>Project 2: Real-Time Chat Application</strong>
-              <p>A chat app developed with React and Node.js that supports real-time messaging and notifications, using WebSockets for live communication.</p>
-            </li>
-            <li>
-              <strong>Project 3: Task Management System</strong>
-              <p>A task management tool where users can create, update, and assign tasks. Integrated with MongoDB for data persistence and React for the front-end interface.</p>
-            </li>
-            <li>
-              <strong>Project 4: Portfolio Website</strong>
-              <p>A personal portfolio website to showcase my skills, experience, and projects, developed using React and Node.js, with a custom backend for form submissions.</p>
-            </li>
-          </ul>
+          <div className="card">
+            <FontAwesomeIcon icon={faServer} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Project Highlights</h3>
+              <ul className="project-list">
+                <li><strong>E-Commerce Website:</strong> Built with React, Node.js, MongoDB for seamless shopping experience.</li>
+                <li><strong>Real-Time Chat Application:</strong> Built with React and Node.js for live messaging with WebSockets.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faCloud} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Cloud Platforms & Version Control</h3>
+              <ul className="services-list">
+                <li><strong>Cloud Platforms:</strong> Deploy applications to cloud services like AWS, DigitalOcean.</li>
+                <li><strong>Version Control (Git):</strong> Efficient collaboration with GitHub/GitLab for code management.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="button-container">

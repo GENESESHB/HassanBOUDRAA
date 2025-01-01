@@ -1,65 +1,117 @@
-/* Upwork.css */
-
 .upwork-section {
-  background-color: #f4f6f9;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 1200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure full height to vertically center */
 }
 
 .container1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  text-align: center; /* Center text */
 }
 
 .section-title {
   font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 20px;
-  color: #2c3e50;
+  text-align: center;
 }
 
-.intro-text {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  margin-bottom: 20px;
+/* Center the cards container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  max-width: 500px; /* Limit card width */
+  margin: 10px;
+  flex-direction: column;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #0066cc;
+  margin-right: 20px;
+}
+
+.card-content {
+  flex: 1;
+  text-align: left; /* Align text to left in cards */
 }
 
 .subheading {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #2c3e50;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .services-list, .project-list {
-  list-style-type: disc;
-  margin-left: 20px;
-  font-size: 1.1rem;
-  color: #34495e;
+  list-style-type: none;
+  padding-left: 20px;
 }
 
 .services-list li, .project-list li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .button-container {
+  text-align: center;
   margin-top: 20px;
 }
 
 .navigate-button {
+  background-color: #0066cc;
+  color: #fff;
   padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  font-size: 1.1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .navigate-button:hover {
-  background-color: #2980b9;
+  background-color: #005bb5;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%; /* Take full width on mobile */
+    max-width: none; /* Remove max-width */
+  }
+
+  .navigate-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
 }

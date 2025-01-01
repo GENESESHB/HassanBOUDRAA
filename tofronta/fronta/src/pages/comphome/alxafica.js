@@ -1,16 +1,22 @@
 import React from 'react';
-import './styles/AlxAfrica.css';  // Add this for custom styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers, faCalendarAlt, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import './styles/AlxAfrica.css';
 
 function AlxAfrica() {
   return (
     <section className="experience-section">
       <div className="container1">
         <h2 className="section-title">ALX Africa Tutor Experience</h2>
-        <div className="experience-details">
-          <p className="intro-text">
-            I served as a software engineering tutor at ALX Africa, guiding students through a rigorous curriculum and hands-on projects. I worked to empower students to develop critical problem-solving skills, build real-world applications, and prepare them for successful careers in tech.
-          </p>
+        <div className="experience-card">
+          <div className="experience-intro">
+            <p className="intro-text">
+              I served as a software engineering tutor at ALX Africa, guiding students through a rigorous curriculum and hands-on projects. I worked to empower students to develop critical problem-solving skills, build real-world applications, and prepare them for successful careers in tech.
+            </p>
+          </div>
+
           <div className="experience-content">
+            <h3 className="content-title">Key Responsibilities</h3>
             <ul className="task-list">
               <li>Mentored over <strong>50 students</strong> in software development fundamentals, focusing on the MERN stack (MongoDB, Express.js, React, Node.js).</li>
               <li>Developed and taught a comprehensive curriculum covering key topics such as JavaScript, React, Node.js, MongoDB, and API design.</li>
@@ -19,16 +25,21 @@ function AlxAfrica() {
               <li>Helped students build projects, including full-stack applications, RESTful APIs, and interactive user interfaces.</li>
               <li>Organized and conducted weekly live coding sessions, Q&A, and troubleshooting for students.</li>
             </ul>
-            <div className="experience-stats">
-              <div className="stat-item">
-                <p><span className="highlight">12 months</span> of tutoring experience</p>
-              </div>
-              <div className="stat-item">
-                <p><span className="highlight">50+ students</span> mentored</p>
-              </div>
-              <div className="stat-item">
-                <p><span className="highlight">20+ projects</span> guided to completion</p>
-              </div>
+          </div>
+
+          <div className="experience-stats">
+            <h3 className="stats-title">Key Stats</h3>
+            <div className="stat-item">
+              <FontAwesomeIcon icon={faCalendarAlt} className="stat-icon" />
+              <p><span className="highlight">12 months</span> of tutoring experience</p>
+            </div>
+            <div className="stat-item">
+              <FontAwesomeIcon icon={faUsers} className="stat-icon" />
+              <p><span className="highlight">50+ students</span> mentored</p>
+            </div>
+            <div className="stat-item">
+              <FontAwesomeIcon icon={faProjectDiagram} className="stat-icon" />
+              <p><span className="highlight">20+ projects</span> guided to completion</p>
             </div>
           </div>
         </div>

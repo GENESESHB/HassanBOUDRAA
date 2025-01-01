@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDownWideShort, faInfoCircle, faScaleBalanced } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownWideShort, faInfoCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './styles/Navbar.css';
-import logo from '../assets/lg.png';
+import logo from '../assets/hbnb.png';
 
 const CLASSES = {
   ACTIVE: 'active',
@@ -97,7 +97,7 @@ const Navbar = () => {
               onClick={() => handleLinkClick('/contact')}
               className={activeLink === '/contact' ? CLASSES.ACTIVE : ''}
             >
-              <FontAwesomeIcon icon={faScaleBalanced} className="icon-spacing" /> Contant Me
+              <FontAwesomeIcon icon={faEnvelope} className="icon-spacing" /> Contant Me
             </Link>
           </div>
         </div>
