@@ -1,118 +1,72 @@
 .home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 
-.introsec {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Adding space between elements */
+.exp {
+    text-align: center;
+    margin-bottom: 40px;
+    MARGIN-TOP: 22px;
 }
 
-.introsec img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px; /* Slightly rounded corners for better style */
-}
-
-.introsec p {
-  font-size: 1.2rem; /* Adjusted for consistent readability */
-  text-align: justify;
-  padding: 20px;
-  line-height: 1.6; /* Improved line spacing */
-}
-
-.introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(95, 158, 160, 0.45); /* Transparent aqua color */
-  padding: 20px; /* Slightly increased for better spacing */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
-  width: 100%;
-  max-width: 1200px; /* Restricting max width for better layout on large screens */
-}
-
-.introduction-text {
-  opacity: 0;
-  animation: appear 2s forwards;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.introduction-text span {
-  display: block;
-  animation-delay: 1s;
-}
-
-.introduction-text span:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.introduction-text span:nth-child(3) {
-  animation-delay: 3s;
-}
-
-.experience, .education, .services {
-  margin-top: 40px; /* Consistent margin for separation */
-}
-
-.experience-cards, .education-cards, .services-cards {
+.card-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 20px; /* Unified gap for consistent spacing */
 }
 
 .card {
-  background-color: #333;
-  color: #fff; /* Ensuring text contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 300px; /* Restricting card size for better layout */
+  flex: 1 1 calc(50% - 40px); /* 50% width minus gap on larger screens */
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fbcdcd29;
   text-align: center;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 8px; /* Matches container radius */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #ff306a;
 }
 
-@media (min-width: 768px) {
-  .introsec {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
 
-  .introsec img {
-    width: 40%;
-    height: 400px;
-  }
+.card p {
+  padding: 0 10px;
+  font-size: 1em;
+  color: #7f8c8d;
+}
+section {
+    BACKGROUND: WHITE;
+    BORDER-RADIUS: 24PX;
+    PADDING: 22PX;
+    MARGIN-TOP: 20px;
+}
 
+.card button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #ff306a; /* Updated button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: red; /* Slightly darker shade for hover */
+}
+
+@media (max-width: 768px) {
   .card {
-    width: calc(33.33% - 20px); /* Responsive grid layout */
-  }
-
-  .experience-cards, .education-cards, .services-cards {
-    flex-direction: row;
-    gap: 40px; /* Increased spacing for larger screens */
+    flex: 1 1 100%; /* Full width on smaller screens */
   }
 }

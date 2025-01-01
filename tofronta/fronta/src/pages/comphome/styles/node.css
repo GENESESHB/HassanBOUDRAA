@@ -1,0 +1,132 @@
+/* NodeJS.css */
+
+.nodejs-section {
+  background-color: #f0f4f7;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.nodejs-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.nodejs-capabilities, .nodejs-usecases, .nodejs-tools {
+  margin-bottom: 20px;
+}
+
+.capabilities, .usecases, .tools {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.capabilities li, .usecases li, .tools li {
+  margin-bottom: 10px;
+}
+
+.nodejs-stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stat-item {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.navigate-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigate-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .capabilities, .usecases, .tools {
+    font-size: 1rem;
+  }
+
+  .nodejs-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat-item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .navigate-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nodejs-section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}

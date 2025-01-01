@@ -7,7 +7,7 @@
 }
 a.footer-nav-link:hover {
     background: #d73953;
-    color: white;
+    color: #7f8c8d;
     padding: 10px;
     text-decoration: none;
     font-size: 13PX;
@@ -21,16 +21,16 @@ a.footer-nav-link:hover {
 .footer {
   width: 95%;
   padding: var(--footer-padding);
-  background: none;
+  background: #fbcdcd29;
   text-align: center;
 }
 
 .footer-copyright {
   padding: 10px;
-  color: black;
+  color: #7f8c8d;
 }
 a.footer-nav-link {
-    color: black;
+    color: #7f8c8d;
     text-decoration: none;
     font-size: 12PX;
 }
@@ -56,7 +56,7 @@ a.footer-nav-link {
 }
 
 .footer-address {
-  color: black;
+  color: #7f8c8d;
   margin-top: 1rem;
 }
 
@@ -66,15 +66,15 @@ a.footer-nav-link {
 }
 
 .social-link>svg {
-  fill: black; /* Ensures icons are white */
+  fill: #7f8c8d; /* Ensures icons are white */
   width: 2rem; /* Icon size */
   height: 2rem; /* Icon size */
-  color: black;
+  color: white;
 }
 
 .line-divider {
   height: 1px; /* Height of the line */
-  background-color: black; /* Color of the line */
+  background-color: #fff; /* Color of the line */
   margin: 20px 0; /* Spacing above and below the line */
 }
 

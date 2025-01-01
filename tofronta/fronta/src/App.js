@@ -17,15 +17,11 @@ import Projects from './pages/project';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Footer from './components/footer';
-import video from './assets/vedio/vedio.mp4';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <video autoPlay loop muted className="background-video">
-          <source src={video} type="video/mp4" />
-        </video>
         <Navbar />
         <div className='content'>
           <Routes>
@@ -46,9 +42,7 @@ function App() {
             <Route path='/holberton' element={<Holberton />} />
           </Routes>
         </div>
-        <div>
-          <Footer/>
-        </div>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,104 @@
+/* AlxAfrica.css */
+
+.experience-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.experience-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+}
+
+.experience-stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stat-item {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .task-list {
+    font-size: 1rem;
+  }
+
+  .experience-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat-item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}
