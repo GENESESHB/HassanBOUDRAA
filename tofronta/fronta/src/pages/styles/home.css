@@ -1,9 +1,4 @@
-img.imgw {
-    width: 100%;
-    HEIGHT: 240PX;
-    BORDER-RADIUS: 8px;
-    BORDER: NONE;
-}
+
 
 .home-page {
   padding: 20px;
@@ -72,12 +67,18 @@ section {
 .card button:hover {
   background-color: red; /* Slightly darker shade for hover */
 }
+.ima img {
+    width: 100%;
+    HEIGHT: 240PX;
+    BORDER-RADIUS: 8px;
+    BORDER: NONE;
+}
 
 @media (max-width: 768px) {
   .card {
     flex: 1 1 100%; /* Full width on smaller screens */
   }
-  .img.imgw {
+  .ima img {
     height: 170PX;
   }
 }

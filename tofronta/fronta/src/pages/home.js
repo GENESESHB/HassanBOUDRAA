@@ -41,7 +41,9 @@ const Home = () => {
             { img: facebookIcon, title: 'Gestion Facebook', desc: 'Stratégie de contenu et gestion de pages Facebook pour des résultats optimaux.', icon: <FaFacebook /> }
           ].map(({ img, title, desc, icon }, index) => (
             <div className="card" key={index}>
-              <img src={img} className='imgw' alt={title} />
+              <div className='ima'>
+                 <img src={img}  alt={title} />
+              </div>
               <h3>{title}</h3>
               <p>{icon} {desc}</p>
               <button onClick={() => handleNavigation(`/${title.toLowerCase().replace(/\s+/g, '')}`)}>See more...</button>
