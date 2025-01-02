@@ -13,10 +13,10 @@ import mongodbIcon from '../assets/mongodb.webp';
 import algo from '../assets/algo.jpeg';
 import tfm from '../assets/tfm.jpeg';
 import express from '../assets/express.webp';
-import facebookIcon from '../assets/algo.jpeg';
-import frontendIcon from '../assets/algo.jpeg';
-import backendIcon from '../assets/algo.jpeg';
-import devopsIcon from '../assets/algo.jpeg';
+import facebookIcon from '../assets/mediase.jpg';
+import frontendIcon from '../assets/frontse.jpg';
+import backendIcon from '../assets/backse.jpg';
+import devopsIcon from '../assets/devopsse.jpg';
 // Import FontAwesome icons
 import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
 
