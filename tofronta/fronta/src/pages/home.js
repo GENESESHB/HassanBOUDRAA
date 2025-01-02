@@ -13,9 +13,12 @@ import mongodbIcon from '../assets/mongodb.webp';
 import algo from '../assets/algo.jpeg';
 import tfm from '../assets/tfm.jpeg';
 import express from '../assets/express.webp';
-
+import facebookIcon from '../assets/algo.jpeg';
+import frontendIcon from '../assets/algo.jpeg';
+import backendIcon from '../assets/algo.jpeg';
+import devopsIcon from '../assets/algo.jpeg';
 // Import FontAwesome icons
-import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,8 +30,26 @@ const Home = () => {
   return (
     <div className="home-page">
       <Introduction />
+      <section className="services">
+        <h2 className='exp'>What I Can Do</h2>
+        <div className="card-container">
+          {[
+            { img: frontendIcon, title: 'Frontend Development', desc: 'Creating dynamic and responsive web applications using modern technologies like React.js.', icon: <FaDesktop /> },
+            { img: backendIcon, title: 'Backend Development', desc: 'Developing robust and scalable backend systems using Node.js and NoSQL databases.', icon: <FaServer /> },
+            { img: devopsIcon, title: 'DevOps', desc: 'Managing server deployments and CI/CD pipelines, ensuring seamless production environments.', icon: <FaCodeBranch /> },
+            { img: facebookIcon, title: 'Gestion Facebook', desc: 'Stratégie de contenu et gestion de pages Facebook pour des résultats optimaux.', icon: <FaFacebook /> }
+          ].map(({ img, title, desc, icon }, index) => (
+            <div className="card" key={index}>
+              <img src={img} alt={title} />
+              <h3>{title}</h3>
+              <p>{icon} {desc}</p>
+              <button onClick={() => handleNavigation(`/${title.toLowerCase().replace(/\s+/g, '')}`)}>See more...</button>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="experience">
-        <h2 className='exp' >Expérience</h2>
+        <h2 className='exp'>Expérience</h2>
         <div className="card-container">
           {[
             { img: alxAfrica, title: 'ALX Africa', role: 'role: software engineering tutor', duration: 'duration: 2 ans', roleIcon: <FaChalkboardTeacher />, durationIcon: <FaCalendarAlt />, path: '/alxafrica' },
@@ -41,8 +62,8 @@ const Home = () => {
             <div className="card" key={title}>
               <img src={img} alt={title} />
               <h3>{title}</h3>
-              <p>{roleIcon} {role}</p> {/* Role and its icon */}
-              <p>{durationIcon} {duration}</p> {/* Duration and its icon */}
+              <p>{roleIcon} {role}</p>
+              <p>{durationIcon} {duration}</p>
               <button onClick={() => handleNavigation(path)}>See more...</button>
             </div>
           ))}
@@ -66,7 +87,7 @@ const Home = () => {
         </div>
       </section>
       <section className="services">
-        <h2 className='exp' >Services</h2>
+        <h2 className='exp'>IT Technologie</h2>
         <div className="card-container">
           {[
             { img: reactIcon, title: 'React', desc: 'Développement Web avec React', path: '/react' },
