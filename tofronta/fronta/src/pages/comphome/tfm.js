@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles/tfm.css'; // Custom CSS file for styling
+import './styles/upwork.css'; // Custom CSS file for styling
 
 const TFM = () => {
   const navigate = useNavigate();
@@ -14,16 +14,17 @@ const TFM = () => {
       <div className="container1">
         <h2 className="section-title">My Experience in Teaching Children: Pedagogical Techniques and Methods</h2>
 
-        <p className="intro-text">
-          Over the past two years, I have had the privilege of teaching young children, an experience that has allowed me to refine my pedagogical skills and explore various teaching methods. This journey has not only enhanced my understanding of child psychology but also helped me tailor my teaching approach to suit individual needs. Below, I will highlight several pedagogical techniques and provide examples from my experience.
-        </p>
+        <div className="card">
+          <p className="intro-text">
+            Over the past two years, I have had the privilege of teaching young children, an experience that has allowed me to refine my pedagogical skills and explore various teaching methods. This journey has not only enhanced my understanding of child psychology but also helped me tailor my teaching approach to suit individual needs. Below, I will highlight several pedagogical techniques and provide examples from my experience.
+          </p>
+        </div>
 
-        <div className="pedagogical-techniques">
+        <div className="card">
           <h3 className="subheading">Key Pedagogical Techniques in Teaching Children</h3>
-
           <ul className="techniques-list">
             <li>
-              <strong>Constructivism</strong> – This approach emphasizes that children learn best when they can actively construct their understanding through experience. I used hands-on activities and real-world examples to encourage exploration and discovery. 
+              <strong>Constructivism</strong> – This approach emphasizes that children learn best when they can actively construct their understanding through experience. I used hands-on activities and real-world examples to encourage exploration and discovery.
               <p className="example">Example: In a lesson about animals, I took the children to a zoo or used animal figurines for them to explore and create their own stories about the animals they saw.</p>
             </li>
             <li>
@@ -49,7 +50,7 @@ const TFM = () => {
           </ul>
         </div>
 
-        <div className="pedagogical-outcomes">
+        <div className="card">
           <h3 className="subheading">Outcomes of Using These Techniques</h3>
           <p>
             By integrating these pedagogical techniques into my lessons, I observed significant growth in my students' cognitive, emotional, and social development. The results were evident in:
@@ -62,7 +63,7 @@ const TFM = () => {
           </ul>
         </div>
 
-        <div className="button-container">
+        <div className="card button-container">
           <button className="navigate-button" onClick={handleNavigate}>Learn More About My Teaching Experience</button>
         </div>
       </div>

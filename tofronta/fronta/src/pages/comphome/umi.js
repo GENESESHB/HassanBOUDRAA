@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles/umi.css'; // Custom CSS file for styling
+import './styles/upwork.css'; // Custom CSS file for styling
 
 const Umi = () => {
   const navigate = useNavigate();
@@ -14,11 +14,13 @@ const Umi = () => {
       <div className="container1">
         <h2 className="section-title">My Educational Background and Expertise</h2>
 
-        <p className="intro-text">
-          I have a diverse educational background that spans multiple fields, allowing me to approach challenges from various perspectives. My academic journey includes studying electronics, industrial informatics, quantum mechanics, analog electronics, solid mechanics, wave optics, algebra, analysis, and statics. Additionally, I have developed pedagogical skills by teaching young children, allowing me to refine my approach to learning and problem-solving.
-        </p>
+        <div className="card">
+          <p className="intro-text">
+            I have a diverse educational background that spans multiple fields, allowing me to approach challenges from various perspectives. My academic journey includes studying electronics, industrial informatics, quantum mechanics, analog electronics, solid mechanics, wave optics, algebra, analysis, and statics. Additionally, I have developed pedagogical skills by teaching young children, allowing me to refine my approach to learning and problem-solving.
+          </p>
+        </div>
 
-        <div className="academic-background">
+        <div className="card">
           <h3 className="subheading">Fields of Study</h3>
           <ul className="fields-list">
             <li><strong>Electronics</strong> – I have gained in-depth knowledge of both digital and analog electronics, understanding the principles of circuit design, signal processing, and embedded systems.</li>
@@ -33,7 +35,7 @@ const Umi = () => {
           </ul>
         </div>
 
-        <div className="teaching-background">
+        <div className="card">
           <h3 className="subheading">Pedagogical Techniques in Teaching</h3>
           <p>
             Alongside my technical studies, I have had the opportunity to teach young children, which has allowed me to develop my pedagogical techniques and methods. Over the past two years, I have employed various approaches to foster a positive learning environment:

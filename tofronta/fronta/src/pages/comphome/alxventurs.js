@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles/AlxAfrica.css';  // Add this for custom styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChartBar, faLightbulb, faCogs, faUsers, faCode, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import './styles/upwork.css'; // Custom CSS for styling
 
 const AlxVentures = () => {
   const navigate = useNavigate();
@@ -13,32 +15,84 @@ const AlxVentures = () => {
     <section className="alx-ventures-section">
       <div className="container1">
         <h2 className="section-title">ALX Ventures: Startup Reports & Tech Solutions</h2>
-        <div className="experience-details">
-          <p className="intro-text">
-            As part of my work with ALX Ventures, I conducted comprehensive market studies and created tailored technology solutions for various tourist products. The goal was to align startup needs with technical innovations to improve both customer experiences and operational efficiency.
-          </p>
-          <div className="experience-content">
-            <ul className="task-list">
-              <li>Conducted thorough <strong>market studies</strong> to understand the demands and challenges faced by different startups in the tourism sector.</li>
-              <li>Analyzed the needs of each startup and developed customized <strong>tech solutions</strong> to enhance their product offerings.</li>
-              <li>Collaborated with teams to design and implement <strong>tourist-centric products</strong>, integrating cutting-edge technology to improve user experiences.</li>
-              <li>Provided actionable insights and recommendations for scaling products, including enhancing their market visibility.</li>
-              <li>Worked with front-end technologies (HTML, CSS, JS) and back-end solutions (Node.js, MongoDB) to build scalable applications for startups.</li>
-              <li>Managed projects and coordinated cross-functional teams to ensure seamless delivery of tech solutions.</li>
-            </ul>
-            <div className="experience-stats">
-              <div className="stat-item">
-                <p><span className="highlight">5+ years</span> of experience in startup analysis and tech solutions</p>
-              </div>
-              <div className="stat-item">
-                <p><span className="highlight">20+ startups</span> assisted with market studies and tech development</p>
-              </div>
-              <div className="stat-item">
-                <p><span className="highlight">30+ products</span> enhanced with technology solutions</p>
-              </div>
+        <div className="cards-container">
+          <div className="card">
+            <FontAwesomeIcon icon={faChartBar} className="card-icon" />
+            <div className="card-content">
+              <h3>Market Studies</h3>
+              <p>
+                Conducted in-depth studies to understand startup demands and challenges in the tourism sector.
+              </p>
             </div>
           </div>
-          <button className="navigate-button" onClick={handleNavigate}>View More Details</button>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faLightbulb} className="card-icon" />
+            <div className="card-content">
+              <h3>Customized Tech Solutions</h3>
+              <p>
+                Developed tailored solutions to enhance product offerings and meet unique startup needs.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faUsers} className="card-icon" />
+            <div className="card-content">
+              <h3>Tourist-Centric Products</h3>
+              <p>
+                Collaborated on designing innovative products to improve customer experiences.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faCogs} className="card-icon" />
+            <div className="card-content">
+              <h3>Actionable Insights</h3>
+              <p>
+                Provided strategies for scaling products and enhancing market visibility.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faCode} className="card-icon" />
+            <div className="card-content">
+              <h3>Tech Development</h3>
+              <p>
+                Built scalable applications using front-end and back-end technologies like Node.js and MongoDB.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <FontAwesomeIcon icon={faProjectDiagram} className="card-icon" />
+            <div className="card-content">
+              <h3>Project Management</h3>
+              <p>
+                Managed projects and coordinated teams for seamless delivery of tech solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="experience-stats">
+          <div className="stat-item">
+            <p><span className="highlight">5+ years</span> of experience in startup analysis and tech solutions</p>
+          </div>
+          <div className="stat-item">
+            <p><span className="highlight">20+ startups</span> assisted with market studies and tech development</p>
+          </div>
+          <div className="stat-item">
+            <p><span className="highlight">30+ products</span> enhanced with technology solutions</p>
+          </div>
+        </div>
+
+        <div className="button-container">
+          <button className="navigate-button" onClick={handleNavigate}>
+            View More Details
+          </button>
         </div>
       </div>
     </section>

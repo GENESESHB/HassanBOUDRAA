@@ -1,51 +1,60 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faCalendarAlt, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
-import './styles/AlxAfrica.css';
+import './styles/upwork.css'; // Custom CSS file for styling
 
-function AlxAfrica() {
+const AlxAfrica = () => {
   return (
-    <section className="experience-section">
+    <section className="alx-africa-section">
       <div className="container1">
         <h2 className="section-title">ALX Africa Tutor Experience</h2>
-        <div className="experience-card">
-          <div className="experience-intro">
-            <p className="intro-text">
-              I served as a software engineering tutor at ALX Africa, guiding students through a rigorous curriculum and hands-on projects. I worked to empower students to develop critical problem-solving skills, build real-world applications, and prepare them for successful careers in tech.
-            </p>
+
+        <div className="cards-container">
+          <div className="card">
+            <FontAwesomeIcon icon={faUsers} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Mentorship</h3>
+              <ul className="services-list">
+                <li>Mentored over <strong>50 students</strong> in MERN stack fundamentals.</li>
+                <li>Conducted weekly live coding sessions and troubleshooting.</li>
+                <li>Provided constructive feedback and code reviews to improve practices.</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="experience-content">
-            <h3 className="content-title">Key Responsibilities</h3>
-            <ul className="task-list">
-              <li>Mentored over <strong>50 students</strong> in software development fundamentals, focusing on the MERN stack (MongoDB, Express.js, React, Node.js).</li>
-              <li>Developed and taught a comprehensive curriculum covering key topics such as JavaScript, React, Node.js, MongoDB, and API design.</li>
-              <li>Provided <strong>constructive feedback</strong> and code reviews to help students improve their code quality and development practices.</li>
-              <li>Collaborated with fellow instructors to refine course materials, incorporating student feedback to improve course content and delivery.</li>
-              <li>Helped students build projects, including full-stack applications, RESTful APIs, and interactive user interfaces.</li>
-              <li>Organized and conducted weekly live coding sessions, Q&A, and troubleshooting for students.</li>
-            </ul>
+          <div className="card">
+            <FontAwesomeIcon icon={faCalendarAlt} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Curriculum Development</h3>
+              <ul className="services-list">
+                <li>Developed and taught topics like JavaScript, React, Node.js, and MongoDB.</li>
+                <li>Collaborated with instructors to refine materials based on feedback.</li>
+                <li>Integrated real-world examples to enhance learning.</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="experience-stats">
-            <h3 className="stats-title">Key Stats</h3>
-            <div className="stat-item">
-              <FontAwesomeIcon icon={faCalendarAlt} className="stat-icon" />
-              <p><span className="highlight">12 months</span> of tutoring experience</p>
-            </div>
-            <div className="stat-item">
-              <FontAwesomeIcon icon={faUsers} className="stat-icon" />
-              <p><span className="highlight">50+ students</span> mentored</p>
-            </div>
-            <div className="stat-item">
-              <FontAwesomeIcon icon={faProjectDiagram} className="stat-icon" />
-              <p><span className="highlight">20+ projects</span> guided to completion</p>
+          <div className="card">
+            <FontAwesomeIcon icon={faProjectDiagram} className="card-icon" />
+            <div className="card-content">
+              <h3 className="subheading">Project Guidance</h3>
+              <ul className="services-list">
+                <li>Guided <strong>20+ projects</strong> to successful completion.</li>
+                <li>Helped students build full-stack applications and RESTful APIs.</li>
+                <li>Prepared students for real-world tech challenges.</li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <div className="button-container">
+          <button className="navigate-button" onClick={() => alert('Explore More')}>
+            Explore My ALX Journey
+          </button>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default AlxAfrica;
