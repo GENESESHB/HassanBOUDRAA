@@ -17,7 +17,7 @@ import facebookIcon from '../assets/mediase.jpg';
 import frontendIcon from '../assets/frontse.jpg';
 import backendIcon from '../assets/backse.jpg';
 import devopsIcon from '../assets/devopsse.jpg';
-
+import { Helmet } from 'react-helmet';
 
 // Import FontAwesome icons
 import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
@@ -31,6 +31,17 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <Helmet>
+        <title>HassanBOUDRAA</title>
+        <meta name="description" content="Welcome to my portfolio. I am a full-stack MERN developer." />
+        <meta name="keywords" content="Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Portfolio" />
+        <meta name="author" content="Your Name" />
+        <meta property="og:title" content="Home - My Portfolio" />
+        <meta property="og:description" content="Explore my full-stack MERN projects and services." />
+        <meta property="og:image" content="https://www.your-portfolio.com/your-image.jpg" />
+        <meta property="og:url" content="https://www.your-portfolio.com" />
+        <link rel="canonical" href="https://www.your-portfolio.com" />
+      </Helmet>
       <Introduction />
       <section className="services">
         <h2 className='exp'>Services</h2>
