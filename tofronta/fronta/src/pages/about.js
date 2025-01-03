@@ -1,7 +1,12 @@
 import React, {useEffect} from 'react';
 import './comphome/styles/upwork.css'; // Ensure your CSS file is linked for styles
+import {useNavigate} from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
+  const nav = () => {
+    navigate('/projects');
+  };
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -101,7 +106,7 @@ const About = () => {
         </div>
 
         <div className="button-container">
-          <button className="navigate-button">Explore My Projects</button>
+          <button className="navigate-button" onClick={nav} >Explore My Projects</button>
         </div>
       </div>
     </section>
