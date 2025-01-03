@@ -1,15 +1,9 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCode, faProjectDiagram, faRocket, faToolbox } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
 import './styles/upwork.css'; // Custom CSS file for styling
 
 const NodeJS = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/nodejs');
-  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -77,7 +71,9 @@ const NodeJS = () => {
         </div>
 
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>Explore Node.js in Action</button>
+         <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+          <button className="navigate-button" >Explore Node.js in Action</button>
+         </a>
         </div>
       </div>
     </section>

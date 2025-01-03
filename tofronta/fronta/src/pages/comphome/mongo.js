@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faDatabase,
@@ -15,11 +14,6 @@ import {
 import './styles/upwork.css'; // Ensure this path correctly points to your CSS file
 
 const MongoDB = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/mongodb');
-  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -149,9 +143,11 @@ const MongoDB = () => {
          </div>
         </div>
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>
+         <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+          <button className="navigate-button" >
             Explore MongoDB in Action
           </button>
+         </a>
         </div>
       </div>
     </section>

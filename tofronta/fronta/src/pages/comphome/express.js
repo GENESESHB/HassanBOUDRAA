@@ -1,15 +1,9 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faShieldAlt, faSyncAlt, faDatabase, faCogs, faFileAlt, faUpload, faLock, faBook } from '@fortawesome/free-solid-svg-icons';
 import './styles/upwork.css'; // Add custom CSS for styling
 
 const Express = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/express');
-  };
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -120,9 +114,11 @@ const Express = () => {
         </div>
 
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>
+         <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+          <button className="navigate-button" >
             Learn More About Our Express Services
           </button>
+         </a>
         </div>
       </div>
     </section>

@@ -1,14 +1,8 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import './styles/upwork.css'; // Custom CSS file for styling
 import tfmat from '../../assets/tfmat.png';
 
 const TFM = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/tfm');
-  };
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -76,7 +70,9 @@ const TFM = () => {
           </ul>
         </div>
         <div className="card button-container">
-          <button className="navigate-button" onClick={handleNavigate}>Learn More About My Teaching Experience</button>
+          <a href="https://www.teachformorocco.org" target="_blank" rel="noopener noreferrer">
+             <button className="navigate-button">Learn More About My Teaching Experience</button>
+          </a>
         </div>
         <div className="container1">
            <h2 className="section-title">certificate</h2>

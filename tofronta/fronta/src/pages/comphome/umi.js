@@ -1,13 +1,7 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import './styles/upwork.css'; // Custom CSS file for styling
 
 const Umi = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/umi');
-  };
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -58,7 +52,9 @@ const Umi = () => {
             <p>Studied forces and their effect on stationary bodies, an essential area of knowledge for mechanical and civil engineering applications.</p>
         </div>
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>Learn More About My Expertise</button>
+          <a href="https://www.fs-umi.ac.ma/" target="_blank" rel="noopener noreferrer">
+            <button className="navigate-button" >Learn More About My Expertise</button>
+          </a>
         </div>
        </div>
       </div>

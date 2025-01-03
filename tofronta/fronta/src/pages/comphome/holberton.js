@@ -1,6 +1,5 @@
 
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import certif  from '../../assets/certif.png';
 import note from '../../assets/short.png';
@@ -14,8 +13,6 @@ import {
 import './styles/upwork.css';
 
 const Holberton = () => {
-  const navigate = useNavigate();
-  const handleNavigate = () => navigate('/holberton');
 
   useEffect(() => window.scrollTo({ top: 0, behavior: 'smooth' }), []);
 
@@ -84,10 +81,12 @@ const Holberton = () => {
           </div>
         </div>
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>
+         <a href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">
+          <button className="navigate-button" >
             Explore My Holberton Experience
           </button>
-        </div>
+         </a>
+       </div>
 
         <div className="container1">
           <h2 className="section-title">Certificate</h2>
