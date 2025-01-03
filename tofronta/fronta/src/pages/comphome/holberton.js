@@ -9,10 +9,7 @@ import {
   faDatabase,
   faFlask,
   faLaptopCode,
-  faProjectDiagram,
-  faStar,
 } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 import './styles/upwork.css';
 

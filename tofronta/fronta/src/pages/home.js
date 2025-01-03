@@ -20,7 +20,7 @@ import devopsIcon from '../assets/devopsse.jpg';
 import { Helmet } from 'react-helmet';
 
 // Import FontAwesome icons
-import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
 
 const Home = () => {
   const navigate = useNavigate();

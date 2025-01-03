@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faServer, faCode, faProjectDiagram, faRocket, faTasks, faToolbox } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
+import {faCode, faProjectDiagram, faRocket, faToolbox } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
 import './styles/upwork.css'; // Custom CSS file for styling
 
 const NodeJS = () => {

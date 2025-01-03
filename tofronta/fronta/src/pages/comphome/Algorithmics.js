@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faCode, faProjectDiagram, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faProjectDiagram, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import './styles/upwork.css'; // Add this for custom styling
 
 const Algorithmics = () => {

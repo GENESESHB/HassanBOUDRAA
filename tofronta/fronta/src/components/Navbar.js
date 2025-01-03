@@ -12,8 +12,6 @@ const CLASSES = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userImage, setUserImage] = useState(null);
   const [activeLink, setActiveLink] = useState('/');
   const dropdownRef = useRef(null);
   const navigate = useNavigate();
@@ -30,21 +28,6 @@ const Navbar = () => {
   const toHome = useCallback(() => {
     navigate('/');
   }, [navigate]);
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setIsLoggedIn(true);
-      try {
-        const userData = JSON.parse(localStorage.getItem('user'));
-        if (userData && userData.profileImage) {
-          setUserImage(userData.profileImage);
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }
-  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
