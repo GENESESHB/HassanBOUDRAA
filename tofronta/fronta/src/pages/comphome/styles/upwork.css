@@ -1,3 +1,15 @@
+.mop {
+    padding: 0 10px;
+    font-size: 1em;
+    color: black;
+    background-color: #ffffff;
+    padding: 21px;
+    margin: 4px;
+    width: 96%;
+    DISPLAY: flex;
+    BORDER-RADIUS: 11px;
+    box-shadow: 1px 6px 12px 5px #cbcbcb4a;
+}
 li {
    color: black;
 }
@@ -76,6 +88,7 @@ strong {
 .subheading {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: black;
 }
 
 .services-list, .project-list {
