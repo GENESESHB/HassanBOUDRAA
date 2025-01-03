@@ -31,16 +31,16 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <Helmet>
-        <title>HassanBOUDRAA</title>
-        <meta name="description" content="Welcome to my portfolio. I am a full-stack MERN developer." />
-        <meta name="keywords" content="Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Portfolio" />
-        <meta name="author" content="Your Name" />
-        <meta property="og:title" content="Home - My Portfolio" />
-        <meta property="og:description" content="Explore my full-stack MERN projects and services." />
-        <meta property="og:image" content="https://www.your-portfolio.com/your-image.jpg" />
-        <meta property="og:url" content="https://www.your-portfolio.com" />
-        <link rel="canonical" href="https://www.your-portfolio.com" />
+     <Helmet>
+        <title>Hassan Boudraa - Full Stack MERN Developer</title>
+        <meta name="description" content="Welcome to the portfolio of Hassan Boudraa. I am a full-stack MERN developer specializing in React, Node.js, and MongoDB." />
+        <meta name="keywords" content="Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Portfolio, Web Development" />
+        <meta name="author" content="Hassan Boudraa" />
+        <meta property="og:title" content="Hassan Boudraa - Full Stack MERN Developer" />
+        <meta property="og:description" content="Explore my portfolio and full-stack MERN projects, showcasing my expertise in React, Node.js, and MongoDB." />
+        <meta property="og:image" content="https://www.hassanboudraa.me/your-image.jpg" />
+        <meta property="og:url" content="https://www.hassanboudraa.me" />
+        <link rel="canonical" href="https://www.hassanboudraa.me" />
       </Helmet>
       <Introduction />
       <section className="services">
