@@ -17,6 +17,8 @@ import facebookIcon from '../assets/mediase.jpg';
 import frontendIcon from '../assets/frontse.jpg';
 import backendIcon from '../assets/backse.jpg';
 import devopsIcon from '../assets/devopsse.jpg';
+
+
 // Import FontAwesome icons
 import { FaChalkboardTeacher, FaBriefcase, FaLaptopCode, FaCogs, FaCalendarAlt, FaFacebook, FaDesktop, FaServer, FaCodeBranch } from 'react-icons/fa';
 
@@ -31,7 +33,7 @@ const Home = () => {
     <div className="home-page">
       <Introduction />
       <section className="services">
-        <h2 className='exp'>What I Can Do</h2>
+        <h2 className='exp'>Services</h2>
          <hr/>
         <div className="card-container">
           {[

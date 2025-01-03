@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase, faCogs, faServer, faCloud } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
@@ -8,14 +8,17 @@ const Upwork = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/upwork');
+    navigate('/alxventurs');
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <section className="upwork-section">
       <div className="container1">
-        <h2 className="section-title">My Upwork Experience - Full Stack MERN Developer</h2>
-
+        <h2 className="section-title">Full Stack MERN Developer</h2>
+          <hr />
         <div className="cards-container">
           <div className="card">
             <FontAwesomeIcon icon={faDatabase} className="card-icon" />
@@ -66,7 +69,13 @@ const Upwork = () => {
         </div>
 
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>Explore My Upwork Portfolio</button>
+          <button className="navigate-button" onClick={handleNavigate}>AlxVenturs Experience</button>
+        </div>
+        <div className="container1">
+           <h2 className="section-title">certificate</h2>
+            <hr />
+           <div className='co1'>
+           </div>
         </div>
       </div>
     </section>

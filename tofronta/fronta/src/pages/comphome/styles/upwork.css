@@ -1,3 +1,21 @@
+li {
+   color: black;
+}
+strong {
+   color: red;
+}
+.co1 {
+    width: 96%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.co1 img {
+   width: 45%;
+   padding: 5px;
+}
 .upwork-section {
   padding: 20px;
   background-color: #f9f9f9;
@@ -18,6 +36,7 @@
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
+  color: black;
 }
 
 /* Center the cards container */
@@ -66,6 +85,7 @@
 
 .services-list li, .project-list li {
   margin-bottom: 10px;
+  color: black;
 }
 
 .button-container {
@@ -98,7 +118,7 @@
   }
 
   .navigate-button {
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -113,5 +133,13 @@
 
   .subheading {
     font-size: 1.2rem;
+  }
+  .co1 img {
+     width: 90%;
+     padding: 5px;
+  }
+  .container1 {
+     width: 96%;
+     PADDING: 0px;
   }
 }

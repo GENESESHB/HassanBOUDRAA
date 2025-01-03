@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faCode, faProjectDiagram, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
@@ -8,14 +8,17 @@ const Algorithmics = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/algorithmics');
+    navigate('/upwork');
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <section className="algorithmics-section">
       <div className="container1">
-        <h2 className="section-title">Teaching Experience in Algorithmics and Software Development</h2>
-
+        <h2 className="section-title">Teaching Experience in Algorithmics </h2>
+         <hr />
         <div className="cards-container">
           <div className="card">
             <FontAwesomeIcon icon={faLaptopCode} className="card-icon" />
@@ -55,8 +58,14 @@ const Algorithmics = () => {
         </div>
 
         <div className="button-container">
-          <button className="navigate-button" onClick={handleNavigate}>View More Details</button>
+          <button className="navigate-button" onClick={handleNavigate}>Upwork Experience</button>
         </div>
+      </div>
+      <div className="container1">
+           <h2 className="section-title">certificate</h2>
+            <hr />
+           <div className='co1'>
+           </div>
       </div>
     </section>
   );

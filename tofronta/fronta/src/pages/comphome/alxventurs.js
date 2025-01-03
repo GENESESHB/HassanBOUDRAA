@@ -1,20 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartBar, faLightbulb, faCogs, faUsers, faCode, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import './styles/upwork.css'; // Custom CSS for styling
+import alxV from '../../assets/alxV.png';
 
 const AlxVentures = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/alxventurs');
+    navigate('/tfm');
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <section className="alx-ventures-section">
       <div className="container1">
-        <h2 className="section-title">ALX Ventures: Startup Reports & Tech Solutions</h2>
+        <h2 className="section-title">Startup Reports & Tech Solutions</h2>
+          <hr />
         <div className="cards-container">
           <div className="card">
             <FontAwesomeIcon icon={faChartBar} className="card-icon" />
@@ -93,6 +99,13 @@ const AlxVentures = () => {
           <button className="navigate-button" onClick={handleNavigate}>
             View More Details
           </button>
+        </div>
+        <div className="container1">
+           <h2 className="section-title">certificate</h2>
+            <hr />
+           <div className='co1'>
+              <img src={alxV} alt='image'/>
+           </div>
         </div>
       </div>
     </section>

@@ -15,6 +15,7 @@ const Express = () => {
     <section className="express-section">
       <div className="container1">
         <h2 className="section-title">Services We Offer with Express.js</h2>
+         <hr />
         <div className="cards-container">
           <div className="card">
             <FontAwesomeIcon icon={faCode} className="card-icon" />

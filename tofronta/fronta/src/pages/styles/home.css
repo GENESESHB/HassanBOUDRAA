@@ -43,9 +43,16 @@
 }
 
 .card p {
-  padding: 0 10px;
-  font-size: 1em;
-  color: #7f8c8d;
+    padding: 0 10px;
+    font-size: 1em;
+    color: black;
+    background-color: #ffffff;
+    padding: 21px;
+    margin: 4px;
+    width: 80%;
+    DISPLAY: flex;
+    BORDER-RADIUS: 11px;
+    box-shadow: 1px 6px 12px 5px #cbcbcb4a;
 }
 section {
     BACKGROUND: WHITE;
@@ -66,6 +73,7 @@ section {
 
 .card button:hover {
   background-color: red; /* Slightly darker shade for hover */
+  box-shadow: 1px 6px 12px 5px #ee576859;
 }
 .ima img {
     width: 100%;
