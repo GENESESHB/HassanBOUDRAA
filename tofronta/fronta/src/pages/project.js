@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './comphome/styles/upwork.css';  // Ensure that you have linked the upwork.css file properly
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';  // Import GitHub icon from Font Awesome
 
 const Projects = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <section className="upwork-section">
       <div className="container1">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faShieldAlt, faSyncAlt, faDatabase, faCogs, faFileAlt, faUpload, faLock, faBook } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,9 @@ const Express = () => {
   const handleNavigate = () => {
     navigate('/express');
   };
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <section className="express-section">
       <div className="container1">

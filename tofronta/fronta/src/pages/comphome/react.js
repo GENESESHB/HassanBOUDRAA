@@ -11,6 +11,9 @@ import './styles/upwork.css'; // Importing the provided CSS file
 
 const ReactComponent = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const [counter, setCounter] = useState(0); // For useState example
   const [text, setText] = useState(''); // For input field example

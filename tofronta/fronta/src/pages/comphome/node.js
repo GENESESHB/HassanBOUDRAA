@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServer, faCode, faProjectDiagram, faRocket, faTasks, faToolbox } from '@fortawesome/free-solid-svg-icons'; // Importing relevant icons
@@ -10,6 +10,10 @@ const NodeJS = () => {
   const handleNavigate = () => {
     navigate('/nodejs');
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <section className="nodejs-section">
