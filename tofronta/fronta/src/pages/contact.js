@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaWhatsapp } from 'react-icons/fa'; // Importing Font Awesome icons
-import './comphome/styles/upwork.css'; // Importing the custom CSS file for styling
+import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import './comphome/styles/upwork.css';
+import axios from 'axios'; // Import Axios
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const ContactForm = () => {
     subject: '',
     message: '',
   });
+
+  const [status, setStatus] = useState(null); // For tracking form submission status
 
   // Handle input change
   const handleChange = (e) => {
@@ -19,11 +22,28 @@ const ContactForm = () => {
     });
   };
 
-  // Handle form submission
+  // Handle form submission and send data to Formspree
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // For now, just log the form data
-    // Add your email or API logic here
+
+    // Replace this with your Formspree endpoint
+    const endpoint = "https://formspree.io/f/xqaagbjk";
+
+    axios
+      .post(endpoint, formData)
+      .then((response) => {
+        setStatus('SUCCESS');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        setStatus('ERROR');
+        console.error('Error sending form data:', error);
+      });
   };
 
   return (
@@ -36,7 +56,7 @@ const ContactForm = () => {
           <form className="card" onSubmit={handleSubmit}>
             <label className="mop" htmlFor="name">
               <input
-                placeholder='  Name'
+                placeholder="Name"
                 type="text"
                 id="name"
                 name="name"
@@ -47,7 +67,7 @@ const ContactForm = () => {
             </label>
             <label className="mop" htmlFor="email">
               <input
-                placeholder='  Email'
+                placeholder="Email"
                 type="email"
                 id="email"
                 name="email"
@@ -58,18 +78,18 @@ const ContactForm = () => {
             </label>
             <label className="mop" htmlFor="subject">
               <input
-                placeholder='  Subject'
+                placeholder="Subject"
                 type="text"
                 id="subject"
                 name="subject"
-                value={formData.name}
+                value={formData.subject}
                 onChange={handleChange}
                 required
               />
             </label>
             <label className="mop" htmlFor="message">
               <textarea
-                placeholder='  your message here... '
+                placeholder="Your message here..."
                 id="message"
                 name="message"
                 value={formData.message}
@@ -81,11 +101,14 @@ const ContactForm = () => {
             <button type="submit" className="navigate-button">
               Send Message
             </button>
+
+            {status === 'SUCCESS' && <p>Message sent successfully!</p>}
+            {status === 'ERROR' && <p>Oops! There was an error sending the message.</p>}
           </form>
 
           {/* Email and WhatsApp Buttons */}
           <div className="card">
-            <p>You can contact me through various channels—I’m always open to new opportunities and listening to every single chance. Feel free to reach out via: </p>
+            <p>You can contact me through various channels—I’m always open to new opportunities and listening to every single chance. Feel free to reach out via:</p>
             <div className="mop">
               <div className="co1">
                 <a href={`mailto:hassan.hbmama@gmail.com`} target="_blank" rel="noopener noreferrer">
@@ -113,3 +136,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
