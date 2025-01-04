@@ -1,3 +1,15 @@
+input {
+    width: 90%;
+    HEIGHT: 30px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+textarea  {
+    width: 90%;
+    HEIGHT: 30px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
 .mop {
     padding: 0 10px;
     font-size: 1em;
@@ -154,5 +166,8 @@ strong {
   .container1 {
      width: 96%;
      PADDING: 0px;
+  }
+  .mop {
+    width: 85%;
   }
 }

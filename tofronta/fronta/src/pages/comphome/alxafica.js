@@ -51,7 +51,7 @@ const AlxAfrica = () => {
             <div className="card-content">
               <h3 className="subheading">Project Guidance</h3>
               <ul className="services-list">
-                <li>Guided <strong>20+ projects</strong> to successful completion.</li>
+                <li>Guided <strong>30+ projects</strong> to successful completion.</li>
                 <li>Helped students build full-stack applications and RESTful APIs.</li>
                 <li>Prepared students for real-world tech challenges.</li>
               </ul>

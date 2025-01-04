@@ -63,8 +63,8 @@ const NodeJS = () => {
             <div className="card-content">
               <h3 className="subheading">Experience & Stats</h3>
               <ul className="services-list">
-                <li><strong>100+ Projects:</strong> Built using Node.js.</li>
-                <li><strong>5+ Years:</strong> Expertise in scalable applications.</li>
+                <li><strong>32+ Projects:</strong> Built using Node.js.</li>
+                <li><strong>3+ Years:</strong> Expertise in scalable applications.</li>
               </ul>
             </div>
           </div>

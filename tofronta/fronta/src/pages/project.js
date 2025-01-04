@@ -30,7 +30,7 @@ const Projects = () => {
                 <li>Algorithmes sur arbre binaire</li>
                 <li>Traitement des demandes clients</li>
               </ul>
-              <p><strong>Durée:</strong> 3 mois</p>
+              <p><strong>Durée:</strong> 3 weeks</p>
               <p><strong>Technologies utilisées:</strong> C, Algorithmes, Structures de données</p>
             </div>
             <div className="button-container">
@@ -38,7 +38,7 @@ const Projects = () => {
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>
-              </a>
+              </a>B
             </div>
           </div>
 
@@ -58,7 +58,7 @@ const Projects = () => {
                 <li>Filtrage et recherche des utilisateurs</li>
                 <li>Structure OOP</li>
               </ul>
-              <p><strong>Durée:</strong> 4 mois</p>
+              <p><strong>Durée:</strong> 4 weeks</p>
               <p><strong>Technologies utilisées:</strong> Python, SQL, API, OOP, JavaScript</p>
             </div>
             <div className="button-container">
@@ -85,7 +85,7 @@ const Projects = () => {
                 <li>Frontend: HTML, CSS</li>
                 <li>Rendu dynamique: Jinja</li>
               </ul>
-              <p><strong>Durée:</strong> 5 mois</p>
+              <p><strong>Durée:</strong> 5 weeks</p>
               <p><strong>Technologies utilisées:</strong> Flask, Python, SQLAlchemy, Jinja, HTML, CSS</p>
             </div>
             <div className="button-container">
@@ -113,7 +113,7 @@ const Projects = () => {
                 <li>Base de données: PostgreSQL</li>
                 <li>Gestion des profils et services</li>
               </ul>
-              <p><strong>Durée:</strong> 6 mois</p>
+              <p><strong>Durée:</strong> 6 weeks</p>
               <p><strong>Technologies utilisées:</strong> React, Django, PostgreSQL, JavaScript, CSS</p>
             </div>
             <div className="button-container">
@@ -141,7 +141,7 @@ const Projects = () => {
                 <li>Database: MongoDB</li>
                 <li>Video & Marketing: User-generated reels, Platform Visibility</li>
               </ul>
-              <p><strong>Durée:</strong> 8 mois</p>
+              <p><strong>Durée:</strong> 8 months</p>
               <p><strong>Technologies utilisées:</strong> React, Node.js, Express, MongoDB, JavaScript, CSS</p>
             </div>
             <div className="button-container">
@@ -168,7 +168,7 @@ const Projects = () => {
                 <li>Protocols: HTTP, HTTPS, TLS</li>
                 <li>Security: Firewall & SSL Configuration</li>
               </ul>
-              <p><strong>Durée:</strong> 2 mois</p>
+              <p><strong>Durée:</strong> 3 months</p>
               <p><strong>Technologies utilisées:</strong> Nginx, Certbot, TLS, SSL, Firewall</p>
             </div>
             <div className="button-container">

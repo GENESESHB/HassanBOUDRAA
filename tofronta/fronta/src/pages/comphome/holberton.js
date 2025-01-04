@@ -69,13 +69,13 @@ const Holberton = () => {
           </div>
           <div className="card">
             <div className="card-content">
-              <span className="card-icon">1+ year</span>
+              <span className="card-icon">19 months</span>
               <p>of full-stack development experience.</p>
             </div>
           </div>
           <div className="card">
              <div className="card-content">
-               <span className="card-icon">10+ projects</span>
+               <span className="card-icon">100+ projects</span>
                <p>completed during my time at Holberton.</p>
              </div>
           </div>

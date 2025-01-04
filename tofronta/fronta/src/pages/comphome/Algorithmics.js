@@ -49,9 +49,9 @@ const Algorithmics = () => {
             <div className="card-content">
               <h3 className="subheading">Teaching Highlights</h3>
               <ul className="services-list">
-                <li><strong>Experience:</strong> 3+ years of teaching algorithmics and software development.</li>
+                <li><strong>Experience:</strong> 4+ months of teaching algorithmics and software development.</li>
                 <li><strong>Mentorship:</strong> One-on-one guidance, workshops, and personalized feedback for students.</li>
-                <li><strong>Impact:</strong> Trained 100+ students, helping them excel in tech careers.</li>
+                <li><strong>Impact:</strong> Trained 40+ students, helping them excel in tech careers.</li>
               </ul>
             </div>
           </div>

@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
   });
 
@@ -34,8 +35,8 @@ const ContactForm = () => {
           {/* Contact Form */}
           <form className="card" onSubmit={handleSubmit}>
             <label className="mop" htmlFor="name">
-              Name:
               <input
+                placeholder='  Name'
                 type="text"
                 id="name"
                 name="name"
@@ -44,10 +45,9 @@ const ContactForm = () => {
                 required
               />
             </label>
-
             <label className="mop" htmlFor="email">
-              Email:
               <input
+                placeholder='  Email'
                 type="email"
                 id="email"
                 name="email"
@@ -56,10 +56,20 @@ const ContactForm = () => {
                 required
               />
             </label>
-
+            <label className="mop" htmlFor="subject">
+              <input
+                placeholder='  Subject'
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </label>
             <label className="mop" htmlFor="message">
-              Message:
               <textarea
+                placeholder='  your message here... '
                 id="message"
                 name="message"
                 value={formData.message}
@@ -75,6 +85,7 @@ const ContactForm = () => {
 
           {/* Email and WhatsApp Buttons */}
           <div className="card">
+            <p>you can coontact me using deffirance way am lisning to evry single chance </p>
             <div className="mop">
               <div className="co1">
                 <a href={`mailto:hassan.hbmama@gmail.com`} target="_blank" rel="noopener noreferrer">

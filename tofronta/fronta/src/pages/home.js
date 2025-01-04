@@ -51,7 +51,7 @@ const Home = () => {
             { img: frontendIcon, title: 'Frontend Development', desc: 'Creating dynamic and responsive web applications using modern technologies like React.js.', icon: <FaDesktop /> },
             { img: backendIcon, title: 'Backend Development', desc: 'Developing robust and scalable backend systems using Node.js and NoSQL databases.', icon: <FaServer /> },
             { img: devopsIcon, title: 'DevOps', desc: 'Managing server deployments and CI/CD pipelines, ensuring seamless production environments.', icon: <FaCodeBranch /> },
-            { img: facebookIcon, title: 'Gestion Facebook', desc: 'Stratégie de contenu et gestion de pages Facebook pour des résultats optimaux.', icon: <FaFacebook /> }
+            { img: facebookIcon, title: 'Gestion Facebook', desc: 'Social Media Manager - Spécialiste du contenu for the best result ad influence', icon: <FaFacebook /> }
           ].map(({ img, title, desc, icon }, index) => (
             <div className="card" key={index}>
               <div className='ima'>
@@ -69,11 +69,11 @@ const Home = () => {
          <hr/>
         <div className="card-container">
           {[
-            { img: alxAfrica, title: 'ALX Africa', role: 'role: software engineering tutor', duration: 'duration: 2 ans', roleIcon: <FaChalkboardTeacher />, durationIcon: <FaCalendarAlt />, path: '/alxafrica' },
-            { img: upwork, title: 'Upwork', role: 'role: Développeur freelance', duration: 'duration: 3 ans', roleIcon: <FaLaptopCode />, durationIcon: <FaCalendarAlt />, path: '/upwork' },
-            { img: alxVentures, title: 'ALX Ventures', role: 'role: besniss student ', duration: 'duration: 1 an', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/alxventurs' },
-            { img: algo, title: 'Algorithmics', role: 'role: algorithmics teacher', duration: 'duration: 6 mois', roleIcon: <FaBriefcase/>, durationIcon: <FaCalendarAlt />, path: '/algorithmics' },
-            { img: tfm, title: 'TFM', role: 'role: teacher', duration: 'duration: 1 an', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/tfm' }
+            { img: alxAfrica, title: 'ALX Africa', role: 'role: software engineering tutor', duration: 'duration: 4 months', roleIcon: <FaChalkboardTeacher />, durationIcon: <FaCalendarAlt />, path: '/alxafrica' },
+            { img: upwork, title: 'Upwork', role: 'role: Développeur freelance', duration: 'duration: 1 year', roleIcon: <FaLaptopCode />, durationIcon: <FaCalendarAlt />, path: '/upwork' },
+            { img: alxVentures, title: 'ALX Ventures', role: 'role: besniss student ', duration: 'duration: 1 year', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/alxventurs' },
+            { img: algo, title: 'Algorithmics', role: 'role: algorithmics teacher', duration: 'duration: 4 months ', roleIcon: <FaBriefcase/>, durationIcon: <FaCalendarAlt />, path: '/algorithmics' },
+            { img: tfm, title: 'TFM', role: 'role: teacher', duration: 'duration: 2 years', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/tfm' }
           ]
           .map(({ img, title, role, duration, roleIcon, durationIcon, path }) => (
             <div className="card" key={title}>
@@ -91,7 +91,7 @@ const Home = () => {
          <hr/>
         <div className="card-container">
           {[
-            { img: universite, title: 'Université', desc: 'Bachelor en Électronique et Informatique Industrielle', path: '/umi' },
+            { img: universite, title: 'Université', desc: ' Industrial Electronics and Computing', path: '/umi' },
             { img: holberton, title: 'Holberton School', desc: 'Software Engineering', path: '/holberton' }
           ]
           .map(({ img, title, desc, path }) => (

@@ -85,13 +85,13 @@ const AlxVentures = () => {
 
         <div className="experience-stats">
           <div className="stat-item">
-            <p><span className="highlight">5+ years</span> of experience in startup analysis and tech solutions</p>
+            <p><span className="highlight">1+ years</span> of experience in startup analysis and tech solutions</p>
           </div>
           <div className="stat-item">
-            <p><span className="highlight">20+ startups</span> assisted with market studies and tech development</p>
+            <p><span className="highlight">2+ startups</span> assisted with market studies and tech development</p>
           </div>
           <div className="stat-item">
-            <p><span className="highlight">30+ products</span> enhanced with technology solutions</p>
+            <p><span className="highlight">5+ products</span> enhanced with technology solutions</p>
           </div>
         </div>
 

@@ -133,12 +133,12 @@ const MongoDB = () => {
         <div className="cards-container">
          <div className="card">
           <div className="stat-item">
-              <span className="card-icon">10+ projects</span><p> using MongoDB as the primary database</p>
+              <span className="card-icon">20+ projects</span><p> using MongoDB as the primary database</p>
           </div>
          </div>
          <div className="card">
           <div className="stat-item">
-              <span className="card-icon">4+ years</span><p> of experience in building scalable applications with MongoDB</p>
+              <span className="card-icon">3+ years</span><p> of experience in building scalable applications with MongoDB</p>
           </div>
          </div>
         </div>
