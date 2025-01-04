@@ -85,7 +85,7 @@ const ContactForm = () => {
 
           {/* Email and WhatsApp Buttons */}
           <div className="card">
-            <p>you can coontact me using deffirance way am lisning to evry single chance </p>
+            <p>You can contact me through various channels—I’m always open to new opportunities and listening to every single chance. Feel free to reach out via: </p>
             <div className="mop">
               <div className="co1">
                 <a href={`mailto:hassan.hbmama@gmail.com`} target="_blank" rel="noopener noreferrer">

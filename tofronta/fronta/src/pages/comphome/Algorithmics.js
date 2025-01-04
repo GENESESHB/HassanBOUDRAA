@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faProjectDiagram, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import './styles/upwork.css'; // Add this for custom styling
+import imaalgo from '../../assets/algoima.png';
 
 const Algorithmics = () => {
   const navigate = useNavigate();
@@ -65,6 +66,7 @@ const Algorithmics = () => {
            <h2 className="section-title">certificate</h2>
             <hr />
            <div className='co1'>
+              <img src={imaalgo} alt='image'/>
            </div>
       </div>
     </section>

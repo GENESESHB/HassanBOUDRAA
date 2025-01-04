@@ -38,7 +38,7 @@ const Projects = () => {
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>
-              </a>B
+              </a>
             </div>
           </div>
 
