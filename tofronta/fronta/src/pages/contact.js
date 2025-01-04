@@ -143,8 +143,8 @@ const ContactForm = () => {
               Send Message
             </button>
 
-            {status === 'SUCCESS' && <p style={{color: 'red'}}>Message sent successfully!</p>}
-            {status === 'ERROR' && <p>Oops! There was an error sending the message.</p>}
+            {status === 'SUCCESS' && <p style={{color: 'green'}}>Message sent successfully!</p>}
+            {status === 'ERROR' && <p style={{color: 'red'}}>Oops! There was an error sending the message.</p>}
           </form>
 
           {/* Email and WhatsApp Buttons */}
