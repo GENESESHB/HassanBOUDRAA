@@ -40,7 +40,7 @@ const ContactForm = () => {
       setError('Subject cannot exceed 16 characters.');
     }
     // Check for message character limit (120 characters)
-    else if (name === 'message' && value.length > 420) {
+    else if (name === 'message' && value.length > 320) {
       setError('Message cannot exceed 320 characters.');
     }
     // Check for name field if name length is greater than 16 characters
@@ -132,18 +132,18 @@ const ContactForm = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                maxLength="421" // Prevent the user from typing more than 120 characters
+                maxLength="321" // Prevent the user from typing more than 120 characters
               />
             </label>
 
             {/* Display error message */}
-            {error && <p style={{color: 'red'}}>{error}</p>}
+            {error && <p className="error-message">{error}</p>}
 
             <button type="submit" className="navigate-button" disabled={!!error}>
               Send Message
             </button>
 
-            {status === 'SUCCESS' && <p style={{color: 'red'}}>Message sent successfully!</p>}
+            {status === 'SUCCESS' && <p>Message sent successfully!</p>}
             {status === 'ERROR' && <p>Oops! There was an error sending the message.</p>}
           </form>
 

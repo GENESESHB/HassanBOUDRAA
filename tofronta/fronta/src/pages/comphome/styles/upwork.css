@@ -1,3 +1,4 @@
+
 input {
     width: 90%;
     HEIGHT: 30px;
@@ -130,7 +131,11 @@ strong {
 .navigate-button:hover {
   background-color: #005bb5;
 }
-
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
 /* Responsive Layout */
 @media (max-width: 768px) {
   .cards-container {
