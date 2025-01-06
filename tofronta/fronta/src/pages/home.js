@@ -71,7 +71,7 @@ const Home = () => {
           {[
             { img: alxAfrica, title: 'ALX Africa', role: 'role: software engineering tutor', duration: 'duration: 4 months', roleIcon: <FaChalkboardTeacher />, durationIcon: <FaCalendarAlt />, path: '/alxafrica' },
             { img: upwork, title: 'Upwork', role: 'role: Développeur freelance', duration: 'duration: 1 year', roleIcon: <FaLaptopCode />, durationIcon: <FaCalendarAlt />, path: '/upwork' },
-            { img: alxVentures, title: 'ALX Ventures', role: 'role: besniss student ', duration: 'duration: 1 year', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/alxventurs' },
+            { img: alxVentures, title: 'ALX Ventures', role: 'role: Business student ', duration: 'duration: 1 year', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/alxventurs' },
             { img: algo, title: 'Algorithmics', role: 'role: algorithmics teacher', duration: 'duration: 4 months ', roleIcon: <FaBriefcase/>, durationIcon: <FaCalendarAlt />, path: '/algorithmics' },
             { img: tfm, title: 'TFM', role: 'role: teacher', duration: 'duration: 2 years', roleIcon: <FaBriefcase />, durationIcon: <FaCalendarAlt />, path: '/tfm' }
           ]

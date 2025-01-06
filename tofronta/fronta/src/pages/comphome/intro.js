@@ -22,14 +22,12 @@ const Introduction = () => {
         </div>
         <div className={`card1 ${showFullText ? "show-full-text" : ""}`}>
           <img src={hhassan} alt="Mon image" />
-          <h2>Je suis Hassan Boudraa</h2>
+          <h2>I'm Hassan Boudraa</h2>
           <p>
-            Développeur Full Stack MERN avec plus de 3 ans d'expérience.
-            Passionné par le développement web, l'algorithmique et
-            l'apprentissage de nouvelles technologies. J'ai travaillé avec des
-            outils comme React, Node.js, MongoDB et Express. Mon objectif est
-            de créer des applications web efficaces et élégantes tout en
-            fournissant une expérience utilisateur optimale.
+            a Full Stack MERN Developer with over 3 years of experience.
+            Passionate about web development, algorithms, and learning new technologies.
+            Skilled in React, Node.js, MongoDB, and Express.
+            My goal is to craft efficient, elegant web applications delivering optimal user experiences.
           </p>
           <button className="btn" onClick={handleToggleText}>
             {showFullText ? "Voir moins" : "En savoir plus"}

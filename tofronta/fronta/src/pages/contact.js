@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import './comphome/styles/upwork.css';
-import axios from 'axios'; // Import Axios
+import axios from 'axios';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,60 +11,71 @@ const ContactForm = () => {
     message: '',
   });
 
-  const [status, setStatus] = useState(null); // For tracking form submission status
-  const [error, setError] = useState(''); // For error message
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState('');
+  const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [correctAnswer, setCorrectAnswer] = useState(null);
+  const [a, setA] = useState(null);
+  const [b, setB] = useState(null);
 
-  // Handle input change
+  useEffect(() => {
+    const randomA = Math.floor(Math.random() * 10);
+    const randomB = Math.floor(Math.random() * 10);
+    setCorrectAnswer(randomA + randomB);
+    setA(randomA);
+    setB(randomB);
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Capitalize the first letter of name
     if (name === 'name') {
       setFormData({
         ...formData,
         [name]: value.charAt(0).toUpperCase() + value.slice(1),
       });
     } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
+      setFormData({ ...formData, [name]: value });
     }
 
-    // Check for email character limit (16 characters)
     if (name === 'email' && value.length > 36) {
-      setError('Email cannot exceed 16 characters.');
-    }
-    // Check for email character limit (16 characters)
-    if (name === 'subject' && value.length > 36) {
-      setError('Subject cannot exceed 16 characters.');
-    }
-    // Check for message character limit (120 characters)
-    else if (name === 'message' && value.length > 420) {
-      setError('Message cannot exceed 320 characters.');
-    }
-    // Check for name field if name length is greater than 16 characters
-    else if (name === 'name' && value.length > 16) {
+      setError('Email cannot exceed 36 characters.');
+    } else if (name === 'subject' && value.length > 36) {
+      setError('Subject cannot exceed 36 characters.');
+    } else if (name === 'message' && value.length > 420) {
+      setError('Message cannot exceed 420 characters.');
+    } else if (name === 'name' && value.length > 16) {
       setError('Name cannot exceed 16 characters.');
-    }
-    // Clear error if input is valid
-    else {
+    } else {
       setError('');
     }
   };
 
-  // Handle form submission and send data to Formspree
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // If there is an error, do not submit the form
+    if (parseInt(captchaAnswer) !== correctAnswer) {
+      alert('You are a bot!');
+      return;
+    }
+
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      setError('All fields must be filled out.');
+      return;
+    }
+
     if (error) return;
 
-    // Replace this with your Formspree endpoint
-    const endpoint = "https://formspree.io/f/xqaagbjk";
+    const endpoint = '(link unavailable)';
+    const formDataToSend = new FormData();
+
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('subject', formData.subject);
+    formDataToSend.append('message', formData.message);
 
     axios
-      .post(endpoint, formData)
+      .post(endpoint, formDataToSend)
       .then((response) => {
         setStatus('SUCCESS');
         setFormData({
@@ -73,6 +84,7 @@ const ContactForm = () => {
           subject: '',
           message: '',
         });
+        setCaptchaAnswer('');
       })
       .catch((error) => {
         setStatus('ERROR');
@@ -86,7 +98,6 @@ const ContactForm = () => {
         <h2 className="section-title">Contact Me</h2>
         <hr />
         <div className="cards-container">
-          {/* Contact Form */}
           <form className="card" onSubmit={handleSubmit}>
             <label className="mop" htmlFor="name">
               <input
@@ -97,7 +108,7 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                maxLength="18" // Prevent the user from typing more than 16 characters
+                maxLength="18"
               />
             </label>
             <label className="mop" htmlFor="email">
@@ -109,7 +120,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                maxLength="37" // Prevent the user from typing more than 16 characters
+                maxLength="37"
               />
             </label>
             <label className="mop" htmlFor="subject">
@@ -132,19 +143,27 @@ const ContactForm = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                maxLength="421" // Prevent the user from typing more than 120 characters
+                maxLength="421"
               />
             </label>
-
-            {/* Display error message */}
-            {error && <p style={{color: 'red'}}>{error}</p>}
-
-            <button type="submit" className="navigate-button" disabled={!!error}>
+            <label htmlFor="captcha">
+              Solve: {a} + {b} = ?
+              <input
+                type="number"
+                id="captcha"
+                name="captcha"
+                value={captchaAnswer}
+                onChange={(e) => setCaptchaAnswer(e.target.value)}
+                required
+              />
+            </label>
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            <button type="submit" className="navigate-button" disabled={!!error || !captchaAnswer}>
               Send Message
             </button>
 
-            {status === 'SUCCESS' && <p style={{color: 'green'}}>Message sent successfully!</p>}
-            {status === 'ERROR' && <p style={{color: 'red'}}>Oops! There was an error sending the message.</p>}
+            {status === 'SUCCESS' && <p style={{ color: 'green' }}>Message sent successfully!</p>}
+            {status === 'ERROR' && <p style={{ color: 'red' }}>Oops! There was an error sending the message.</p>}
           </form>
 
           {/* Email and WhatsApp Buttons */}
