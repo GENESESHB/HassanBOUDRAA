@@ -18,12 +18,18 @@ const ContactForm = () => {
   const [a, setA] = useState(null);
   const [b, setB] = useState(null);
 
-  useEffect(() => {
+  // Function to generate new captcha
+  const generateNewCaptcha = () => {
     const randomA = Math.floor(Math.random() * 10);
     const randomB = Math.floor(Math.random() * 10);
     setCorrectAnswer(randomA + randomB);
     setA(randomA);
     setB(randomB);
+  };
+
+  // Generate captcha on initial render
+  useEffect(() => {
+    generateNewCaptcha();
   }, []);
 
   const handleChange = (e) => {
@@ -85,6 +91,7 @@ const ContactForm = () => {
           message: '',
         });
         setCaptchaAnswer('');
+        generateNewCaptcha(); // Regenerate captcha after successful submission
       })
       .catch((error) => {
         setStatus('ERROR');
