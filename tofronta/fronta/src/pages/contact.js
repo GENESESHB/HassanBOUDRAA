@@ -66,7 +66,7 @@ const ContactForm = () => {
 
     if (error) return;
 
-    const endpoint = '(link unavailable)';
+    const endpoint = "https://formspree.io/f/xqaagbjk";
     const formDataToSend = new FormData();
 
     formDataToSend.append('name', formData.name);
