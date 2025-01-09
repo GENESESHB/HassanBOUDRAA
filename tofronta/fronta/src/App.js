@@ -17,6 +17,7 @@ import Projects from './pages/project';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Footer from './components/footer';
+import Front from './dev/front';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path='/express' element={<Express />} />
             <Route path='/nodejs' element={<NodeJS />} />
             <Route path='/holberton' element={<Holberton />} />
+            <Route path='/frontenddevelopment' element={<Front />} />
           </Routes>
         </div>
         <Footer />
