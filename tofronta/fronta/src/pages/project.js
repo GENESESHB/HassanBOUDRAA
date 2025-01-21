@@ -34,7 +34,7 @@ const Projects = () => {
               <p><strong>Technologies utilisées:</strong> C, Algorithmes, Structures de données</p>
             </div>
             <div className="button-container">
-              <a href="https://github.com/yourusername/shell-project" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Vanbasten01/simple_shell" target="_blank" rel="noopener noreferrer">
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>
@@ -62,7 +62,7 @@ const Projects = () => {
               <p><strong>Technologies utilisées:</strong> Python, SQL, API, OOP, JavaScript</p>
             </div>
             <div className="button-container">
-              <a href="https://github.com/yourusername/airbnb-clone" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GENESESHB/AirBnB_clone_v4" target="_blank" rel="noopener noreferrer">
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>
@@ -89,7 +89,7 @@ const Projects = () => {
               <p><strong>Technologies utilisées:</strong> Flask, Python, SQLAlchemy, Jinja, HTML, CSS</p>
             </div>
             <div className="button-container">
-              <a href="https://github.com/yourusername/island4u" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GENESESHB/island4u.tech" target="_blank" rel="noopener noreferrer">
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>
@@ -117,7 +117,7 @@ const Projects = () => {
               <p><strong>Technologies utilisées:</strong> React, Django, PostgreSQL, JavaScript, CSS</p>
             </div>
             <div className="button-container">
-              <a href="https://github.com/yourusername/locallens" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GENESESHB/Locallens" target="_blank" rel="noopener noreferrer">
                 <button className="navigate-button">
                   <FontAwesomeIcon icon={faGithub} /> Voir sur GitHub
                 </button>

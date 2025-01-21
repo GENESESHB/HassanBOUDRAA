@@ -35,6 +35,8 @@
     object-fit: cover;
     margin-bottom: 20px;
     border: 2px solid #ff306a;
+    filter: grayscale(20%) brightness(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .card h3 {
